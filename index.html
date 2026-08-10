@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Lara ♡</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}
+:root{--bg:#0a0a11;--text:#f9f7fb;--muted:#b9b4c2;--pink:#ff7eaa;--pink2:#ffc0d5}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 20% 15%,#ff6f9c1e,transparent 32%),radial-gradient(circle at 80% 80%,#9d7bff16,transparent 34%),linear-gradient(120deg,#0a0a11,#10101a);z-index:-3}
+.orb{position:fixed;width:360px;height:360px;border-radius:50%;filter:blur(80px);opacity:.18;z-index:-2;animation:drift 10s ease-in-out infinite alternate}.a{background:#ff5f9d;top:-160px;left:-120px}.b{background:#7b61ff;right:-140px;bottom:-180px;animation-delay:-4s}
+.progress{position:fixed;top:0;left:0;width:100%;height:3px;background:#ffffff0d;z-index:20}.progress span{display:block;height:100%;width:16.66%;background:linear-gradient(90deg,var(--pink),#ffd1df);transition:width .6s ease}
+.screen{position:absolute;inset:0;display:grid;place-items:center;padding:8vh 24px;opacity:0;visibility:hidden;transform:translateX(60px) scale(.98);transition:opacity .55s ease,transform .55s ease,visibility .55s}.screen.active{opacity:1;visibility:visible;transform:translateX(0) scale(1)}.screen.exit{opacity:0;transform:translateX(-60px) scale(.98)}
+.card{width:min(720px,100%);max-height:84vh;overflow:auto;padding:clamp(28px,6vw,64px);border:1px solid #ffffff12;border-radius:32px;background:#161621cc;backdrop-filter:blur(20px);box-shadow:0 30px 100px #00000050}.center{text-align:center}
+.kicker{display:inline-block;color:var(--pink2);font-size:.73rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px}
+h1,h2{font-family:Georgia,serif;line-height:1.02;margin:0 0 24px}h1{font-size:clamp(4rem,15vw,8rem);letter-spacing:-.05em}h2{font-size:clamp(2.4rem,7vw,4.7rem);letter-spacing:-.04em}
+p{font-size:1.06rem;line-height:1.8;color:var(--muted);margin:0 0 20px}em{color:#fff;font-style:normal}.lead{font-size:1.25rem}.small{font-size:.95rem}
+.quote{margin:30px 0;padding:20px 24px;border-left:3px solid var(--pink);background:#ff7eaa0d;border-radius:0 16px 16px 0;color:#f7dbe5;font-family:Georgia,serif;font-size:1.35rem;font-style:italic}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0}.chips span{padding:9px 13px;border:1px solid #ffffff12;background:#ffffff08;border-radius:999px;color:#d8d3df;font-size:.88rem}
+.highlight{margin:28px 0;padding:20px;border-radius:18px;background:linear-gradient(135deg,#ff7eaa12,#9c78ff0d);border:1px solid #ff9abc25;color:#fff;font-weight:700;font-size:1.12rem}
+button{border:0;border-radius:999px;padding:14px 22px;background:linear-gradient(135deg,var(--pink2),var(--pink));color:#210d16;font-weight:800;font-size:.95rem;cursor:pointer;box-shadow:0 12px 35px #ff7eaa26;transition:.2s}button:hover{transform:translateY(-2px);box-shadow:0 16px 45px #ff7eaa3b}.ghost{background:transparent;color:var(--pink2);border:1px solid #ffffff16;box-shadow:none;margin-top:10px}
+.heart{font-size:6rem;line-height:1;color:var(--pink);text-shadow:0 0 55px #ff7eaa66;margin-bottom:14px;animation:pulse 1.8s ease-in-out infinite}.big{font-family:Georgia,serif;font-size:1.7rem;color:#fff}.signature{font-family:Georgia,serif;font-size:1.45rem;color:#fff;margin-top:30px}
+.spark{position:fixed;pointer-events:none;z-index:50;font-size:20px;animation:float 1.8s ease-out forwards}
+@keyframes pulse{50%{transform:scale(1.08)}}@keyframes float{to{transform:translateY(-120px) rotate(30deg) scale(1.5);opacity:0}}@keyframes drift{to{transform:translate(70px,40px) scale(1.15)}}
+@media(max-width:600px){.screen{padding:6vh 14px}.card{padding:30px 22px;border-radius:24px;max-height:86vh}p{font-size:1rem}h1{font-size:4.2rem}h2{font-size:2.55rem}}
+</style>
+</head>
+<body>
+<div class="orb a"></div><div class="orb b"></div>
+<div class="progress"><span id="bar"></span></div>
+
+<section class="screen active" data-i="0"><div class="card center">
+<span class="kicker">A little surprise</span><h1>Hey, Lara.</h1>
+<p class="lead">You said <em>“Surprise me.”</em><br>So... I actually did.</p>
+<button data-next>Open it ♡</button></div></section>
+
+<section class="screen" data-i="1"><div class="card">
+<span class="kicker">01 · The beginning</span><h2>Out of all the replies...</h2>
+<p>I still think it's funny that you saw my Reddit post and basically went, <em>“Sige, I'll shoot my shot.”</em></p>
+<p>And somehow, that little shot turned into conversations I genuinely look forward to.</p>
+<div class="quote">“Who knows where this will end up?”</div>
+<p class="small">Well... I'm pretty glad you took that shot.</p>
+<button data-next>Keep going →</button></div></section>
+
+<section class="screen" data-i="2"><div class="card">
+<span class="kicker">02 · What happened</span><h2>Somewhere along the way...</h2>
+<p>Talking to you stopped feeling like just another conversation.</p>
+<div class="chips"><span>random lore</span><span>deep talks</span><span>“HAHAHAHA”</span><span>study breaks</span><span>grocery hypotheticals</span><span>League deaths 😭</span></div>
+<p>I like how we can start with something completely stupid and somehow end up talking about life, experiences, feelings, or whatever random thought appears next.</p>
+<button data-next>There's more? 👀</button></div></section>
+
+<section class="screen" data-i="3"><div class="card">
+<span class="kicker">03 · The honest part</span><h2>I genuinely like you.</h2>
+<p>Not just because you're cute. Although... that definitely doesn't hurt. 😌</p>
+<p>I like getting to know you. I like hearing about your day, your little rants, your experiences, and the things that make you <em>you</em>.</p>
+<p>That's why I decided to stop entertaining all the other conversations from my post. I'd rather give my time and energy to someone I'm genuinely interested in.</p>
+<div class="highlight">And yes, Lara... that someone is you.</div>
+<button data-next>One more thing →</button></div></section>
+
+<section class="screen" data-i="4"><div class="card">
+<span class="kicker">04 · No pressure</span><h2>Let's take our time.</h2>
+<p>I don't want to rush you, label everything immediately, or turn something that's been fun and natural into something stressful.</p>
+<p>You said you want to take things slow. I want that too.</p>
+<p>I just want to keep talking, keep learning about you, spend time with you when we get the chance, and see where this goes.</p>
+<p class="small">Whatever this becomes, I'd rather let it become something real than force it into something before we're ready.</p>
+<button data-next>Okay... final page ♡</button></div></section>
+
+<section class="screen" data-i="5"><div class="card center">
+<div class="heart">♡</div><span class="kicker">05 · The surprise</span>
+<h2>I'm really glad it was you.</h2>
+<p>Out of everyone who could've replied to that post, somehow it was you who ended up here.</p>
+<p>And honestly?</p><p class="big">I think I got pretty lucky. ♡</p>
+<p class="signature">— Leo</p>
+<button class="ghost" id="restart">Read it again</button></div></section>
+
+<div id="sparks"></div>
+<script>
+const screens=[...document.querySelectorAll('.screen')],bar=document.getElementById('bar');
+let current=0,busy=false;
+function go(n){
+ if(n<0||n>=screens.length||n===current||busy)return;
+ busy=true;
+ const old=screens[current],next=screens[n];
+ old.classList.remove('active');old.classList.add('exit');
+ next.classList.remove('exit');next.classList.add('active');
+ current=n;bar.style.width=((n+1)/screens.length*100)+'%';burst(n===5?28:8);
+ setTimeout(()=>{old.classList.remove('exit');busy=false},600);
+}
+document.querySelectorAll('[data-next]').forEach(b=>b.onclick=()=>go(current+1));
+document.getElementById('restart').onclick=()=>{
+ screens[current].classList.remove('active');screens.forEach(s=>s.classList.remove('active','exit'));
+ current=0;screens[0].classList.add('active');bar.style.width=(100/screens.length)+'%';
+};
+document.onkeydown=e=>{if(e.key==='ArrowRight'||e.key==='Enter')go(current+1);if(e.key==='ArrowLeft')go(current-1)};
+let x=0;document.ontouchstart=e=>x=e.changedTouches[0].clientX;
+document.ontouchend=e=>{let d=e.changedTouches[0].clientX-x;if(Math.abs(d)>60)go(current+(d<0?1:-1))};
+function burst(n){const box=document.getElementById('sparks');for(let i=0;i<n;i++){let s=document.createElement('span');s.className='spark';s.textContent=Math.random()>.3?'♡':'✦';s.style.left=(20+Math.random()*60)+'vw';s.style.top=(45+Math.random()*25)+'vh';s.style.animationDelay=(Math.random()*.35)+'s';box.appendChild(s);setTimeout(()=>s.remove(),2100)}}
+</script>
+</body>
+</html>
